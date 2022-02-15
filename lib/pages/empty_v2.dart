@@ -48,6 +48,7 @@ class EmptyStateV2 extends StatelessWidget {
                 ),
 
                 Container(
+                  padding: EdgeInsets.all(17),
                   width: 65,
                   height: 65,
                   decoration: BoxDecoration(
