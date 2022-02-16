@@ -81,35 +81,44 @@ class _PricingV2State extends State<PricingV2> {
 
   Widget cta () {
     return Container(
-              padding: EdgeInsets.all(7),
               width: 319,
               height: 55,
-              decoration: BoxDecoration(
-                color: Color(0xffE57C73),
-                borderRadius: BorderRadius.circular(31)
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    width: 41,
-                  ),
-
-                  Text(
-                    'Subscribe Now',
-                    style: PoppinFont.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 16
-                    ),
-                  ),
-
-                  Image.asset(
-                    'assets/btn_arrow.png',
-                    width: 41,
-                    height: 41,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  shadowColor: Color(0xffE57C73),
+                  elevation: 20,
+                  backgroundColor: Color(0xffE57C73),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(31)
                   )
-                ],
+                ),
+                onPressed: (){},
+                child: Padding(
+                  padding: const EdgeInsets.all(7),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 41,
+                      ),
+                      
+                      Text(
+                        'Subscribe Now',
+                        style: PoppinFont.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                      
+                      Image.asset(
+                        'assets/btn_arrow.png',
+                        width: 41,
+                        height: 41,
+                      )
+                    ],
+                  ),
+                ),
               ),
             );
   }
